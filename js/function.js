@@ -13,7 +13,7 @@ $(window).on('load',function(){
 
     // Código git, linkedin e currículo
 
-    if(width > 900){
+    if(width > 940){
 
         // Git
 
@@ -47,6 +47,30 @@ $(window).on('load',function(){
             },'fast');
         },function(){
             $('#cur p').animate({
+                opacity: '0'
+            },'fast');
+        })
+
+        // Certificado Danki
+
+        $('#danki').hover(function(){
+            $('#danki p').animate({
+                opacity: '1'
+            },'fast');
+        },function(){
+            $('#danki p').animate({
+                opacity: '0'
+            },'fast');
+        })
+
+        // Certificado Aba English
+
+        $('#aba').hover(function(){
+            $('#aba p').animate({
+                opacity: '1'
+            },'fast');
+        },function(){
+            $('#aba p').animate({
                 opacity: '0'
             },'fast');
         })
@@ -190,8 +214,5 @@ $(window).on('load',function(){
     
     }
 
-
-
-    
 
 })

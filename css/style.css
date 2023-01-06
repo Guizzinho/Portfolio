@@ -317,18 +317,21 @@ section.sobre{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .icones a{
+    min-width: 100px;
+    min-height: 80px;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.247);
     display: inline-block;
-    margin-left: 30px;
+    margin: 0 8px;
     text-decoration: none;
 }
 
 .icones p{
-    font-size: 22px;
+    font-size: 20px;
     opacity: 0;
     display: block;
 }
@@ -555,7 +558,9 @@ section.contato{
         opacity: 0;
     }
 
-    
+    .icones p{
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -574,10 +579,6 @@ section.contato{
     .home-info{
         bottom: 120px;
     }
-
-    .icones p{
-        opacity: 1;
-    }
 }
 
 @media screen and (max-width: 450px){
@@ -589,17 +590,3 @@ section.contato{
         min-height: 90vh;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
